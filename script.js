@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('scroll-visible');
-                observer.unobserve(entry.target); // Stop observing once it's in view
+                observer.unobserve(entry.target); 
             }
         });
     });
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        const elementsToObserve = ['.head', '.row_one', '.row_two', '.row_three', '.emekdashlar', '.content', '.container1'];
+        const elementsToObserve = ['.head', '.row_one', '.row_two', '.row_three', '.emekdashlar', '.content', '.container1', '.swiper-pagination', '.swiper-button-next', '.swiper-button-prev'];
 
         elementsToObserve.forEach(selector => {
             document.querySelectorAll(selector).forEach(element => {

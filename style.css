@@ -490,8 +490,11 @@ body {
 .row_three.scroll-visible,
 .emekdashlar.scroll-visible,
 .content.scroll-visible,
+.swiper-pagination.scroll-visible,
+.swiper-button-next.scroll-visible,
+.swiper-button-prev.scroll-visible,
 .container1.scroll-visible {
-  opacity: 1; /* Fully visible */
+  opacity: 0; /* Fully visible */
   transform: translateY(0); /* Back to original position */
   animation: fadeIn 1.5s ease-in-out forwards;
 }
@@ -502,8 +505,11 @@ body {
 .row_three.scroll-visible,
 .emekdashlar.scroll-visible,
 .content.scroll-visible,
+.swiper-pagination.scroll-visible,
+.swiper-button-next.scroll-visible,
+.swiper-button-prev.scroll-visible,
 .container1.scroll-visible {
-  opacity: 1; /* Fully visible */
+  opacity: 0; /* Fully visible */
   transform: translateY(0); /* Back to original position */
   animation: fadeIn 1.5s ease-in-out forwards;
 }/*# sourceMappingURL=style.css.map */
