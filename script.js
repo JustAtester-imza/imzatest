@@ -55,20 +55,41 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
 
-      var swiper2 = new Swiper('.swiper1', {
-        autoHeight: true,
-        pagination:  {
-          el: '.swiper-pagination2',
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
           clickable: true,
         },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-        // Enable debugger
-        debugger: true,
-      });
-
+        breakpoints: {
+          // when window width is >= 576px
+          576: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 3,
+          },
+          // when window width is >= 992px
+          992: {
+            slidesPerView: 4,
+          },
+          // when window width is >= 992px
+          1140: {
+            slidesPerView: 5,
+          },
+          // when window width is >= 992px
+          1260: {
+            slidesPerView: 6,
+          }
+        }
+      }); 
 
       const burgerMenu = document.getElementById('burgerMenu');
       const navbar = document.querySelector('.navbar_in');
