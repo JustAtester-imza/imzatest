@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        const elementsToObserve = ['.head', '.row_one', '.row_two', '.row_three'];
+        const elementsToObserve = ['.head', '.row_one', '.row_two', '.row_three', '.emekdashlar', '.content', '.container1'];
 
         elementsToObserve.forEach(selector => {
             document.querySelectorAll(selector).forEach(element => {

@@ -29,7 +29,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   gap: 40px;
   background-color: #fff;
-  animation: popUp 1.5s ease 0.5s forwards; /* 1.5s duration, 0.5s delay */
+  animation: popUp 1.5s ease; /* 1.5s duration, 0.5s delay */
 }
 .navbar_in.active {
   display: flex;
@@ -268,6 +268,12 @@ body {
     padding-bottom: 30px;
   }
 }
+
+@media (max-width: 553px) {
+  .grid .unibank_img img {
+    content: url('/img/unibankfilial.jpg');
+  }
+}
 .two .content .grid .emek_img {
   position: absolute;
   top: 0;
@@ -313,7 +319,7 @@ body {
     padding: 77px 0px;
   }
 }
-.three .container {
+.three .container1 {
   max-width: 800px;
   background: #2b2730;
   color: #f6f6f6;
@@ -323,7 +329,7 @@ body {
   border-radius: 30px;
   width: 100%;
 }
-.three .container .text {
+.three .container1 .text {
   display: flex;
   justify-content: center;
   font-size: 56px;
@@ -331,14 +337,14 @@ body {
   gap: 10px;
   font-size: clamp(1.4rem, 3.5vw, 2rem);
 }
-.three .container .text .contact {
+.three .container1 .text .contact {
   color: #ffb84c;
 }
 
 .info{
   text-align: justify;
 }
-.three .container .info {
+.three .container1 .info {
   margin-top: 30px;
   line-height: 40px;
   color: #ffffff;
@@ -346,7 +352,7 @@ body {
   font-weight: lighter;
   font-size: 18px;
 }
-.three .container .info .cont {
+.three .container1 .info .cont {
   display: flex;
   align-items: center;
   gap: 9px;
@@ -354,7 +360,7 @@ body {
   font-size: clamp(0.8rem, 3.5vw, 1.1rem);
 }
 @media (max-width: 575px) {
-  .three .container .info .cont {
+  .three .container1 .info .cont {
     margin-left: 10px;
   }
 }
@@ -482,7 +488,10 @@ body {
 .head.scroll-visible,
 .row_one.scroll-visible,
 .row_two.scroll-visible,
-.row_three.scroll-visible {
+.row_three.scroll-visible,
+.emekdashlar.scroll-visible,
+.content.scroll-visible,
+.container1.scroll-visible {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Back to original position */
   animation: fadeIn 1.5s ease-in-out forwards;
@@ -491,7 +500,10 @@ body {
 .head.scroll-visible,
 .row_one.scroll-visible,
 .row_two.scroll-visible,
-.row_three.scroll-visible {
+.row_three.scroll-visible,
+.emekdashlar.scroll-visible,
+.content.scroll-visible,
+.container1.scroll-visible {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Back to original position */
   animation: fadeIn 1.5s ease-in-out forwards;
